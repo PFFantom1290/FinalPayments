@@ -172,7 +172,7 @@ async def weekday_runner():
         # Active posting period
         while dt.datetime.now(KYIV) < end_dt:
             await send_post()
-            wait_minutes = random.randint(1, 78)
+            wait_minutes = random.randint(1, 71)
             await asyncio.sleep(wait_minutes * 60)
 
         # After end time, sleep until tomorrow 10:00
