@@ -11,7 +11,7 @@ CHANNEL_ID = os.getenv("CHANNEL_ID")
 FONT_PATH = os.path.join(os.path.dirname(__file__), "ARLRDBD.TTF")
 KYIV       = ZoneInfo("Europe/Kyiv")
 MIN_AMOUNT = 200
-MAX_AMOUNT = 1500
+MAX_AMOUNT = 1000
 
 bot = Bot(BOT_TOKEN)
 
