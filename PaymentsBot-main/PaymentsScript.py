@@ -184,7 +184,7 @@ async def weekday_runner():
 
         while dt.datetime.now(KYIV) < end_dt:
             await send_post()
-            await asyncio.sleep(random.randint(60, 82 * 60))
+            await asyncio.sleep(random.randint(60, 102 * 60))
 
         tomorrow = (dt.datetime.now(KYIV) + dt.timedelta(days=1)).replace(
             hour=10, minute=0, second=0, microsecond=0)
