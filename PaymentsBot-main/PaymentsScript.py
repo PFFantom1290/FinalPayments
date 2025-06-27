@@ -36,16 +36,16 @@ def load_person():
 
 def weighted_amount() -> int:
     """70 % — MIN_AMOUNT..MID_BORDER, 30 % — MID_BORDER+1..MAX_AMOUNT"""
-    if random.random() < 0.7:
+    if random.random() < 0.8:
         return random.randint(MIN_AMOUNT, MID_BORDER)
     return random.randint(MID_BORDER + 1, MAX_AMOUNT)
 
 def amount_fits_rule(value: int) -> bool:
     """True, если value удовлетворяет распределению 70/30."""
     if MIN_AMOUNT <= value <= MID_BORDER:
-        return random.random() < 0.7
+        return random.random() < 0.8
     if MID_BORDER < value <= MAX_AMOUNT:
-        return random.random() >= 0.7
+        return random.random() >= 0.8
     return False
 
 def fetch_tx():
