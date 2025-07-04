@@ -127,7 +127,7 @@ async def send_post():
     try:
         nick, lead = load_person()
         amt, txid  = fetch_tx()
-        worker     = round(amt * 0.45, 2)
+        worker     = round(amt * 0.35, 2)
         img        = make_image(amt)
 
         cap = (
