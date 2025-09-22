@@ -1,1 +1,2 @@
-start: python PaymentsScript.py
+worker: python -u PaymentsScript.py
+
